@@ -10,12 +10,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<body>
-				<header className='fixed top-0 w-full z-10'>
+			<body className='min-h-screen'>
+				<header>
 					<Navbar />
 				</header>
-				<main className=''>{children}</main>
-				<footer className=''>
+				<main>{children}</main>
+				<footer>
 					<Footer />
 				</footer>
 			</body>
