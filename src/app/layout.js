@@ -11,9 +11,13 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body>
-				<Navbar />
-				{children}
-				<Footer />
+				<header className='fixed top-0 w-full z-10'>
+					<Navbar />
+				</header>
+				<main className=''>{children}</main>
+				<footer className=''>
+					<Footer />
+				</footer>
 			</body>
 		</html>
 	)
